@@ -3,7 +3,7 @@ import numpy as np
 import mxnet as mx
 from mxnet import nd, autograd, gluon
 mx.random.seed(1)
-ctx = mx.cpu()
+ctx = mx.gpu(0)
 
 # init minist data
 def transform(data, label):
