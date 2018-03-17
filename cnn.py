@@ -130,7 +130,7 @@ def evaluate_accuracy(data_iterator, net):
         denominator += data.shape[0]
     return (numerator / denominator).asscalar()
 
-epochs = 1
+epochs = 20
 learning_rate = .01
 smoothing_constant = .01
 
