@@ -112,9 +112,6 @@ def net(X, debug=False):
 
     return yhat_linear
 
-output = net(data, debug=True)
-
-
 def SGD(params, lr):
     for param in params:
         param[:] = param - lr * param.grad
